@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.FailFragment">
+
+    <TextView
+        android:id="@+id/textFailCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Total Fail : 0"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/red"/>
+    <TextView
+        android:id="@+id/textFailNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="There is no fail pair"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFail"
+        android:layout_below="@+id/textFailCounter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_list"/>
+
+</RelativeLayout>

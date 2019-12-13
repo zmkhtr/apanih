@@ -1,0 +1,14 @@
+package id.web.azammukhtar.multithreading.network.model.pass
+
+data class Timestamp(
+    val date: String,
+    val day: String,
+    val hours: String,
+    val minutes: String,
+    val month: String,
+    val nanos: Int,
+    val seconds: String,
+    val time: Int,
+    val timezoneOffset: Int,
+    val year: String
+)

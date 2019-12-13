@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.PairActivity">
+
+    <TextView
+        android:id="@+id/vendorId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vendor_hino"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_margin="5dp"/>
+<!--    <RadioGroup-->
+<!--            android:id="@+id/radioGroup"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="5dp">-->
+<!--        <RadioButton-->
+<!--                android:id="@+id/radioButtonFirst"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Weeo"-->
+<!--                android:checked="true"/>-->
+<!--        <RadioButton-->
+<!--                android:id="@+id/radioButtonSecond"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Hino"/>-->
+<!--    </RadioGroup>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="3"-->
+<!--        android:layout_margin="10dp">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/edtPairVin"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:inputType="number"-->
+<!--            android:hint="VIN (17 Digit)"-->
+<!--            android:maxLength="17"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+<!--        <Button-->
+<!--            android:id="@+id/btnPairRandom"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Random"/>-->
+<!--    </LinearLayout>-->
+    <ernestoyaquello.com.verticalstepperform.VerticalStepperFormLayout
+            android:id="@+id/stepperPair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

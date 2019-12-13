@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.SuccessFragment">
+    <TextView
+        android:id="@+id/textSuccessCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Total Success : 0"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/green"/>
+    <TextView
+        android:id="@+id/textSuccessNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="There is no success pair"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/textSuccessCounter"
+            android:id="@+id/recyclerViewSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_list"/>
+
+</RelativeLayout>

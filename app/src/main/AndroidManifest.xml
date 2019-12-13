@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="id.web.azammukhtar.multithreading">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<!--    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+<!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+
+    <application
+            android:name=".utils.BaseApplication"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_logo"
+            android:label="@string/app_name"
+            android:largeHeap="true"
+            android:persistent="true"
+            android:resizeableActivity="false"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+        <activity
+                android:name=".utils.BaseActivity"></activity>
+        <activity
+                android:name=".ui.ScanActivity"
+                android:screenOrientation="portrait"
+                android:stateNotNeeded="true"
+                tools:replace="android:screenOrientation"></activity>
+        <activity
+                android:name=".ui.PairActivity"
+                android:parentActivityName=".ui.MainActivity"
+                android:screenOrientation="portrait"></activity>
+        <activity
+                android:name=".ui.SignInActivity"
+                android:screenOrientation="portrait"></activity>
+        <activity
+                android:name=".ui.SplashActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".ui.MainActivity"
+                android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+                android:name="com.journeyapps.barcodescanner.CaptureActivity"
+                android:screenOrientation="portrait"
+                android:stateNotNeeded="true"
+                tools:replace="android:screenOrientation" />
+
+<!--        <service android:name=".services.DataService" />-->
+<!--        <service android:name=".services.PairService" />-->
+    </application>
+
+</manifest>

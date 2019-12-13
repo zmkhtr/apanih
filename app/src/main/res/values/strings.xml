@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hino Test App</string>
+    <string name="pairing_50">Pairing…50%....</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="pair">Pair</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="turn_on_flashlight">Turn on Flashlight</string>
+    <string name="turn_off_flashlight">Turn off Flashlight</string>
+    <string name="title_activity_container">ContainerActivity</string>
+    <string name="permission_granted">All Permission is Granted</string>
+    <string name="permission_denied">Please enable All Permission</string>
+    <string name="logout">Logout</string>
+    <string name="vendor_hino">VENDOR : Hino</string>
+</resources>
